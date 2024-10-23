@@ -1,0 +1,7 @@
+<h2>Audiobook Library</h2>
+<ul>
+  <li *ngFor="let book of audiobooks">
+    <h3>{{ book.title }}</h3>
+    <button (click)="playAudiobook(book.url)">Play</button>
+  </li>
+</ul>
